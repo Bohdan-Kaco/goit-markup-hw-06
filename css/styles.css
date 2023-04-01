@@ -523,6 +523,7 @@ img {
   height: 576px;
   border-radius: 4px;
   background-color: var(--bg-modal-color);
+  padding: 72px 24px 24px 24px;
 }
 .modal-close-btn {
   display: flex;
@@ -547,4 +548,33 @@ img {
 }
 .modal-close-btn:is(:hover, :focus) .modal-close-btn-icon {
   fill: #fff;
+}
+/* =================MODAL-FORM=================== */
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+.modal-form-top-text {
+  font-weight: 500;
+}
+.modal-form-input-descr {
+  /* stylename: Small Text;
+  font-family: Roboto; */
+  font-size: 12px;
+  /* font-weight: 400; */
+  line-height: 1.333;
+  letter-spacing: 0.04em;
+  text-align: left;
+}
+.modal-form-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid var(--pr_brand-color);
+  border-radius: 4px;
+  padding-left: 38px;
+}
+.modal-form-message {
+  width: 100%;
+  border: 1px solid var(--pr_brand-color);
+  border-radius: 4px;
 }
