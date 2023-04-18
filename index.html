@@ -397,14 +397,23 @@
           </li>
         </ul>
       </div>
-      <div>
-        <p class="foter-form-top-text">Subscribe</p>
-        <form action="email"></form>
+      <div class="footer-subscribe">
+        <p class="footer-subscribe-top-text">Subscribe</p>
+        <form class="subscribe-form">
+          <label class="subscribe-form-label" for="email"></label>
+          <input class="subscribe-form-input" type="email" id="email" name="email" placeholder="E-mail" required>
+
+          <button class="subscribe-form-button button" type="submit">Subscribe
+            <svg class="subscribe-form-icon" width="24px" height="24px">
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </div>
   </footer>
   <!-- ================MODAL==================== -->
-  <div class="backdrop" data-modal><!-- is-hidden -->
+  <div class="backdrop is-hidden" data-modal><!-- is-hidden -->
     <div class="modal">
       <button type="button" class="modal-close-btn" data-modal-close>
         <svg class="modal-close-btn-icon" width="8" height="8">
@@ -451,7 +460,7 @@
           <input id="user-policy" type="checkbox" name="user_policy" value="true"
             class="modal-form-check visually-hidden">
           <!-- <input class="modal-check visually-hidden" id="privacy" name="user-privacy" type="checkbox" value="true" /> -->
-          <label class="modal-form-check-descr" for="user-privacy">
+          <label class="modal-form-check-descr" for="user-policy">
             <span>
               <svg class="check-icon" width="10" height="8">
                 <use href="./images/icons.svg#icon-check"></use>
@@ -460,15 +469,6 @@
             I accept the terms and conditions of the&nbsp;<a class="privacy-policy-link" href="">Privacy Policy</a>
           </label>
         </div>
-        <!-- <input id="user-policy" type="checkbox" name="user_policy" class="modal-form-check visually-hidden">
-        <label for="user-policy" class="modal-form-check-descr">I accept the terms and conditions of the <a
-            href="">Privacy Policy</a>
-          <span>
-            <svg class="modal-form-policy-icon" width="10" height="8">
-              <use href="./images/icons.svg#icon-check"></use>
-            </svg>
-          </span>
-        </label> -->
         <button type="submit" class="modal-form-submit button">Send</button>
       </form>
     </div>
