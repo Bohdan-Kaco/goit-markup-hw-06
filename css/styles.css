@@ -454,6 +454,9 @@ img {
   background-color: var(--pr_brand-color);
   transition: background-color var(--transition-dur-funk);
 }
+.subscribe-form-input:is(:hover, :focus) {
+  /* border-color: #2196F300; */
+}
 .subscribe-form-button:is(:hover, :focus) {
   background-color: var(--btn-hover);
 }
@@ -469,7 +472,6 @@ img {
 }
 .subscribe-form {
   display: flex;
-  /* align-items: center; */
 }
 /* ===================Portfolio================================================ */
 
@@ -694,15 +696,13 @@ img {
   align-items: center;
   justify-content: center;
   fill: transparent;
-  transition: background-color var(--transition-dur-funk),
     border-color var(--bg-modal-color);
 }
 .modal-form-check:checked + .modal-form-check-descr span {
   background-color: var(--accent-color);
   border: none;
   fill: #f4f4fd;
-  transition: fill var(--transition-dur-funk),
-    background-color var(--transition-dur-funk);
+  transition: fill var(--transition-dur-funk), background-color var(--transition-dur-funk), border-color var(--transition-dur-funk);
 }
 
 .modal-form-check:focus + .modal-form-check-descr span {
