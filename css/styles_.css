@@ -1,4 +1,4 @@
-:root {
+}:root {
   --title-color: #2e2f42;
   --pr_brand-color: #4d5ae5;
   --text-color: #434455;
@@ -8,10 +8,9 @@
   --customer-color: #8e8f99;
   --wite-color: #fff;
   --btn-hover: #404bbf;
+  --success-color: #31D0AA
   --transition-dur-funk: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   --bg-modal-color: #fcfcfc;
-  --Green-color: #31d0aa;
-  --check-descr: #757575;
 }
 body {
   font-family: 'roboto', sans-serif;
@@ -108,7 +107,7 @@ img {
 .page-header {
   padding-top: 24px;
   padding-bottom: 28px;
-  border-bottom: 1px solid var(--footer-color) #e7e9fc;
+  border-bottom: 1px solid var(--footer-color);
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
@@ -398,8 +397,7 @@ img {
   color: var(--team-bgcolor);
 }
 .social-media {
-  /* display: inline-block; */
-  /* margin-left: 80px; */
+  display: inline-block;
 }
 .social-media-title {
   margin-bottom: 24px;
@@ -423,7 +421,7 @@ img {
 }
 .social-media-link:hover,
 .social-media-link:focus {
-  background-color: var(--Green-color);
+  background-color: var(--success-color);
 }
 /* ==========Subscribe========= */
 
@@ -449,7 +447,7 @@ img {
   text-align: center;
   gap: 16px;
   font-weight: 500;
-  color: var(--wite-color);
+  color: #fff;
   padding: 8px 24px;
   border-radius: 4px;
   border: 0;
@@ -470,7 +468,7 @@ img {
 }
 .footer-subscribe-top-text {
   font-weight: 500;
-  color: var(--wite-color);
+  color: #fff;
   margin-bottom: 16px;
 }
 .subscribe-form {
@@ -584,15 +582,12 @@ img {
   width: 408px;
   height: 576px;
   border-radius: 4px;
-  padding: 72px 24px 24px 24px;
   background-color: var(--bg-modal-color);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   transform: translate(-50%, -50%) /*scaleY(1)*/;
   transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -100%) /*scaleY(2)*/;
+  padding: 72px 24px 24px 24px;
 }
 .modal-close-btn {
   display: flex;
@@ -634,7 +629,7 @@ img {
   font-size: 12px;
   line-height: 1.333;
   letter-spacing: 0.04em;
-  color: var(--customer-color);
+  color: #8e8f99;
   text-align: left;
   margin-bottom: 4px;
 }
@@ -692,7 +687,7 @@ img {
   font-size: 12px;
   line-height: 1.333;
   letter-spacing: 0.04em;
-  color: var(--check-descr);
+  color: #757575;
   margin-bottom: 24px;
 }
 .modal-form-check-descr span {
@@ -706,15 +701,13 @@ img {
   align-items: center;
   justify-content: center;
   fill: transparent;
-  border-color: var(--bg-modal-color);
+    border-color var(--bg-modal-color);
 }
 .modal-form-check:checked + .modal-form-check-descr span {
   background-color: var(--accent-color);
   border: none;
-  fill: var(--team-bgcolor);
-  transition: fill var(--transition-dur-funk),
-    background-color var(--transition-dur-funk),
-    border-color var(--transition-dur-funk);
+  fill: #f4f4fd;
+  transition: fill var(--transition-dur-funk), background-color var(--transition-dur-funk), border-color var(--transition-dur-funk);
 }
 
 .modal-form-check:focus + .modal-form-check-descr span {
@@ -732,16 +725,16 @@ img {
   min-width: 169px;
   display: flex;
   padding: 16px 32px;
-  background-color: var(--pr_brand-color);
+  background-color: #4d5ae5;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border: 1px solid var(--pr_brand-color);
+  border: 1px solid #4d5ae5;
   border-radius: 4px;
   justify-content: center;
   align-self: center;
   font-size: 16px;
   line-height: 1.5;
   align-items: center;
-  color: var(--wite-color);
+  color: #ffffff;
   transition: background-color var(--transition-dur-funk);
 }
 .modal-form-submit:is(:hover, :focus) {
