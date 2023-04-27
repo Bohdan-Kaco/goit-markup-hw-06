@@ -128,7 +128,6 @@ img {
 
 .menu-list {
   font-weight: 500;
-  transition: color var(--transition-dur-funk);
 }
 .menu-link:hover,
 .menu-link:focus {
@@ -157,6 +156,7 @@ img {
 .menu-link {
   color: var(--title-color);
   position: relative;
+  transition: color var(--transition-dur-funk);
 }
 .logo {
   font-family: 'Raleway', sans-serif;
