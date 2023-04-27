@@ -706,7 +706,7 @@ img {
   align-items: center;
   justify-content: center;
   fill: transparent;
-  border-color: var(--bg-modal-color);
+  transition: background-color var(--transition-dur-funk);
 }
 .modal-form-check:checked + .modal-form-check-descr span {
   background-color: var(--accent-color);
