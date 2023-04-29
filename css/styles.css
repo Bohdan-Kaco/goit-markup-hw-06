@@ -625,6 +625,7 @@ img {
 }
 .modal-form-top-text {
   font-weight: 500;
+  margin: 0 auto 16px;
 }
 .modal-form-field {
   margin-bottom: 8px;
